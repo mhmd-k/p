@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 export default function Card(props) {
   return (
@@ -8,7 +10,7 @@ export default function Card(props) {
       </div>
       <div className="content">
         <div className="country">
-          <i className="fa-solid fa-location-dot"></i> {props.location}{" "}
+          <FontAwesomeIcon icon={faLocationDot} /> {props.location}{" "}
           <a href={props.googleMapsUrl} target="_blanck">
             View on Google Maps
           </a>
