@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+:root {
+  --main-color: #f55a5a;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  box-sizing: border-box;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  background-color: var(--main-color);
+  color: white;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 55px;
 }
-
-.App-link {
-  color: #61dafb;
+nav h4 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+nav h4 svg {
+  margin-right: 7px;
+  font-size: 20px;
+}
+.container {
+  margin: 50px 0;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+@media (max-width: 767px) {
+  .container {
+    margin: 20px 0;
+    padding: 0 5px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.container .card {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-wrap: nowrap;
+  min-height: 170px;
+}
+.container .card .image {
+  overflow: hidden;
+  min-width: 125px;
+  height: 170px;
+  position: relative;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-right: 20px;
+}
+.container .card .image img {
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.container .card a {
+  color: #918e9b;
+  font-weight: 400;
+  font-size: 10px;
+  margin-left: 12px;
+}
+.container .card .content {
+  padding-top: 20px;
+  height: 100%;
+}
+.container .card .content svg {
+  margin-right: 5px;
+  color: var(--main-color);
+}
+.container .card .content .country {
+  font-weight: 400;
+  font-size: 10px;
+  color: #2b283a;
+}
+.container .card .content h3 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #2b283a;
+  margin: 7px 0;
+}
+.container .card .content .date {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  color: #2b283a;
+}
+.container .card .content p {
+  font-weight: 400;
+  font-size: 10.24px;
 }
