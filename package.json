@@ -1,6 +1,6 @@
 {
-  "homepage": "http://mhmd-k.github.io/p",
-  "name": "p",
+  "homepage": "http://mhmd-k.github.io/react-static-page",
+  "name": "react-static-page",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
